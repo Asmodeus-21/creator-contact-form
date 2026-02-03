@@ -1,16 +1,21 @@
 
 import React from 'react';
+import InstagramProfile from './InstagramProfile';
 
 const Header: React.FC = () => {
   return (
     <header className="text-center mb-20">
-      <div className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8 overflow-hidden bg-white">
-        <img
-          src="/instagram-profile.png"
-          alt="Maya's Instagram Profile Screenshot"
-          className="w-full h-auto object-cover"
-        />
-      </div>
+      <InstagramProfile
+        username="ciaostardus"
+        name="Maya Saha"
+        pronouns="sey/xier"
+        bio="She loves pink 🩵"
+        posts="630"
+        followers="139K"
+        following="0"
+        music="Hasta la Raíz · Natalia Lafourcade"
+        imageUrl="/maya-new-screenshot.jpg"
+      />
       <h1 className="text-4xl md:text-6xl font-bold text-neutral-900 tracking-tight leading-tight">
         Create. Collaborate. Grow.
       </h1>

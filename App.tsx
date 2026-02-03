@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import Section from './components/Section';
@@ -7,7 +6,7 @@ import { CheckIcon, CrossIcon } from './components/Icons';
 const App: React.FC = () => {
   return (
     <div className="bg-neutral-50 min-h-screen text-neutral-800">
-      <main className="max-w-3xl mx-auto px-6 py-12 md:py-20">
+      <main className="max-w-3xl mx-auto px-6 py-12 md:py-20 lg:max-w-5xl"> {/* Widened max-w to accommodate grid if needed, or keep 3xl */}
         <Header />
 
         <div className="space-y-16">
@@ -18,7 +17,7 @@ const App: React.FC = () => {
           </Section>
 
           <Section title="Why This Is a Real Opportunity">
-             <p className="text-lg text-neutral-600 leading-relaxed mb-6">
+            <p className="text-lg text-neutral-600 leading-relaxed mb-6">
               This is more than just creating content together. It's a chance to grow. I've built my own account and learned how to monetize my passion, and I'm ready to share what I know. You'll get:
             </p>
             <ul className="space-y-3">
@@ -35,7 +34,7 @@ const App: React.FC = () => {
                 <span className="text-lg text-neutral-600">Exposure through collaboration and cross-promotion.</span>
               </li>
               <li className="flex items-start">
-                 <CheckIcon className="w-6 h-6 mr-3 text-pink-500 flex-shrink-0 mt-1" />
+                <CheckIcon className="w-6 h-6 mr-3 text-pink-500 flex-shrink-0 mt-1" />
                 <span className="text-lg text-neutral-600">A safe, comfortable, and creative environment to express yourself.</span>
               </li>
             </ul>
@@ -58,7 +57,7 @@ const App: React.FC = () => {
                   <CheckIcon className="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1" />
                   <span className="text-neutral-600">Based in or near Kolkata.</span>
                 </li>
-                 <li className="flex items-start">
+                <li className="flex items-start">
                   <CheckIcon className="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1" />
                   <span className="text-neutral-600">Comfortable and confident on camera.</span>
                 </li>
@@ -83,7 +82,7 @@ const App: React.FC = () => {
                   <CrossIcon className="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-1" />
                   <span className="text-neutral-600">Anyone not based in Kolkata.</span>
                 </li>
-                 <li className="flex items-start">
+                <li className="flex items-start">
                   <CrossIcon className="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-1" />
                   <span className="text-neutral-600">Those looking for online-only work.</span>
                 </li>
@@ -94,7 +93,7 @@ const App: React.FC = () => {
               </ul>
             </Section>
           </div>
-          
+
           <section className="bg-neutral-100 rounded-lg p-8 md:p-12 text-center">
             <h2 className="text-3xl font-bold text-neutral-800">Get In Touch</h2>
             <p className="mt-3 text-neutral-600 max-w-xl mx-auto">
@@ -117,7 +116,7 @@ const App: React.FC = () => {
           </section>
         </div>
       </main>
-       <footer className="text-center py-6 text-neutral-500 text-sm">
+      <footer className="text-center py-6 text-neutral-500 text-sm">
         <p>&copy; {new Date().getFullYear()} Maya. All rights reserved.</p>
       </footer>
     </div>
